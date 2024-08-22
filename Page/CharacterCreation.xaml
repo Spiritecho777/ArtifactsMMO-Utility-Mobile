@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtifactsMMO_Utility_Mobile.Page.CharacterCreation">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+        <Label x:Name="label" Text="Name"/>
+        <Entry x:Name="PlayerName"/>
+
+        <HorizontalStackLayout Spacing="10">
+            <Label x:Name="label2" Text="Skin"/>
+            <Picker x:Name="SkinList" SelectedIndexChanged="ChangeSkin" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Men 1</x:String>
+                    <x:String>Men 2</x:String>
+                    <x:String>Men 3</x:String>
+                    <x:String>Women 1</x:String>
+                    <x:String>Women 2</x:String>
+                    <x:String>Women 3</x:String>
+                </Picker.Items>
+            </Picker>
+        </HorizontalStackLayout>
+
+        <Image x:Name="SkinPicture" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="Confirm" Text="Create" FontSize="Small" LineBreakMode="WordWrap" Clicked="Confirm_Click" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="Cancel" Text="Cancel" FontSize="Small" Clicked="Cancel_Click" HorizontalOptions="FillAndExpand"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+    
+</ContentPage>

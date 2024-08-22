@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArtifactsMMO_Utility_Mobile.Page.Key_Information">
+    
+    <VerticalStackLayout Padding="30" Spacing="15">
+        
+        <Label Text="Enter Key" FontSize="Large"/>
+        <Entry x:Name="Info_Key" Placeholder="Entrez la clé"/>
+        
+        <HorizontalStackLayout Spacing="10">
+            <Button x:Name="Confirm" Text="Confirm" Clicked="Confirm_Click"/>
+            <Button x:Name="Cancel" Text="Cancel" Clicked="Cancel_Click"/>
+        </HorizontalStackLayout>
+    
+    </VerticalStackLayout>
+</ContentPage>
