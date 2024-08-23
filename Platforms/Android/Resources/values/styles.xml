@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Base application theme. -->
+  <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+  </style>
+</resources>

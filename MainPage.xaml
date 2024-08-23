@@ -13,7 +13,7 @@
             <Button x:Name="RecoltLoop" Text="Loop gathering" Background="Red" FontSize="Small" Clicked="RecolteLoop_Click"/>
             <Button Text="Key" Clicked="Key_click"/>
             <Button Text="+" FontSize="Large" Clicked="CharacterCreation_Click"/>
-            <Button Text="-" FontSize="Large" Clicked="DeleteCharacter_Click"/>
+
 
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <CheckBox x:Name="AutoCheck" HeightRequest="15" WidthRequest="15"/>
@@ -21,6 +21,7 @@
             </HorizontalStackLayout>
 
             <Image x:Name="SkinPicture" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="-" FontSize="Large" Clicked="DeleteCharacter_Click" WidthRequest="50" HeightRequest="50" HorizontalOptions="End" VerticalOptions="End" Margin="10"/>
         </VerticalStackLayout>
     </ScrollView>
 
